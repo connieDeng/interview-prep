@@ -23,7 +23,7 @@ def findMaxConsecutiveOnes(nums):
     return maxCnt
 
 """
-comments as you are attempting this question:
+comments:
 - since you only check the length of conseq 0s if the next number isn't 1,
     the last set of 1's arent checked because there isn't a 0 at the end
     of the array
