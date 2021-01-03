@@ -1,6 +1,7 @@
 from maxConsecutiveOnes import *
 from numEvenDigits import *
 from sortedSquareOrder import *
+from insertionSort import *
 
 def main():
 #test for max consecutive ones
@@ -14,8 +15,11 @@ def main():
     # print(findNumbers(arr))
 
 #test for sorted square order
-    arr = [-4,-1,0,3,10]
-    print(sortedSquares(arr))
+    # arr = [-4,-1,0,3,10]
+    # print(sortedSquares(arr))
+
+    arr = [5,6,1]
+    print(insertionSort(arr))
 
 if __name__ == "__main__":
     main()
