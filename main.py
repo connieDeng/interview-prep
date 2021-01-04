@@ -7,6 +7,7 @@ from duplicateZeros import *
 from mergeSortedArr import *
 from reverseInt import *
 from validParentheses import *
+from searchInsertPosition import *
 
 def main():
 #test for max consecutive ones
@@ -46,8 +47,13 @@ def main():
     # print(reverseInt(1534269))
 
 #test for valid parentheses
-    str1 = "){"
-    print(isValid(str1))
+    # str1 = "){"
+    # print(isValid(str1))
+
+#test for search insert position
+    arr = [1]
+    target = 0
+    print(searchInsert(arr, target))
 
 if __name__ == "__main__":
     main()
