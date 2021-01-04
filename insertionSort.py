@@ -1,7 +1,7 @@
 def insertionSort(nums):
     """
     Implementation of Insertion Sort
-    Complexity time: O()
+    Complexity time: O(N^2)
     
     Your arr is split into a sorted and unsorted part. continuously compare key to elements before and 
     insert into the correct place
@@ -19,4 +19,9 @@ def insertionSort(nums):
             while nums[i-1] > key_val and i > 0:
                 nums[i], nums[i-1] = nums[i-1], nums[i]
                 i -= 1
-    return nums           
+    return nums
+
+"""
+comments:
+- performs at the same complexity as bubble & selection sort
+"""
