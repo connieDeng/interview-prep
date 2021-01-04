@@ -6,6 +6,7 @@ from mergeSort import *
 from duplicateZeros import *
 from mergeSortedArr import *
 from reverseInt import *
+from validParentheses import *
 
 def main():
 #test for max consecutive ones
@@ -42,7 +43,11 @@ def main():
     # print(arr1)
 
 #test for reverse int
-    print(reverseInt(1534269))
+    # print(reverseInt(1534269))
+
+#test for valid parentheses
+    str1 = "){"
+    print(isValid(str1))
 
 if __name__ == "__main__":
     main()
