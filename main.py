@@ -8,6 +8,7 @@ from mergeSortedArr import *
 from reverseInt import *
 from validParentheses import *
 from searchInsertPosition import *
+from plusOne import *
 
 def main():
 #test for max consecutive ones
@@ -51,9 +52,15 @@ def main():
     # print(isValid(str1))
 
 #test for search insert position
-    arr = [1]
-    target = 0
-    print(searchInsert(arr, target))
+    # arr = [1]
+    # target = 0
+    # print(searchInsert(arr, target))
+
+#test for plus one
+    arr = [9]
+    arr2 = [9, 9, 9]
+    print(plusOne(arr))
+    print(plusOne(arr2))
 
 if __name__ == "__main__":
     main()
