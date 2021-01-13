@@ -21,9 +21,20 @@ def intersection(nums1, nums2):
     return ansArr
 
 
+def intersection2(nums1, nums2):
+    intersection = []
+    for num in nums1:
+        if num not in intersection and num in nums2:
+            intersection.append(num)
+    return intersection
+
+def intersection3(nums1, nums2):
+    return set(nums1) & set(nums2)
+
+
 values1 = [1,2,3,4]
 values2 = [2,3]
-print(intersection(values1, values2))
+print(intersection3(values1, values2))
 
 '''
 comments
