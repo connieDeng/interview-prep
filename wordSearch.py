@@ -41,3 +41,15 @@ def dfs(board, r, c, count, word):
 board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
 word = "ABCB"
 print(exist(board, word))
+
+
+"""
+comments
+    - double for loop to locate the first letter of the word,
+    - then, you do a dfs on the area's around it to see if the word continues to be found
+    - recursion to act on the rest of the letters
+    - if you end up out of the bored or the matter doesn't match return false
+    - if matches continue the count and continue the search until lastly, count equals the length of the word
+    - in other terms, we found the word
+    - https://www.youtube.com/watch?v=vYYNp0Jrdv0&t=9s
+"""
