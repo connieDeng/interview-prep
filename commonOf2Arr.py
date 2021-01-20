@@ -31,7 +31,6 @@ def intersection2(nums1, nums2):
 def intersection3(nums1, nums2):
     return set(nums1) & set(nums2)
 
-
 values1 = [1,2,3,4]
 values2 = [2,3]
 print(intersection3(values1, values2))
