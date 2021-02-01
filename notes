@@ -1,0 +1,3 @@
+~100 problems (mostly easy, some medium) to get multiple offers. You just need to do enough to spot the patterns. A search in a sorted collection, think binary search. Minimum # of steps, think BFS. Min/max K elements, think heap. Optimization, think DP. Obviously there are no hard and fast rules here, but you should know generally what direction to start with when you're given the problem, and then you can figure it out easily enough during the interview from there.
+
+Honestly, interviewing is not as hard as a lot of people make it sound. Be confident, always explain what you're thinking, and make them like you. You don't have to get the optimal solution to every problem.
