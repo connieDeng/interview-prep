@@ -4,7 +4,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-    def hasCycle(self, head):
+    def hasCycleFloyd(self, head):
         """
         :type head: ListNode
         :rtype: bool
@@ -26,14 +26,54 @@ class ListNode(object):
         
         return False
 
+    def hasCycleBrent(self, head):
+        """
+        :type head: ListNode
+        :rtype: bool
+        2 solutions: Hashing Approach & Floyd’s Cycle-Finding
+        """
+        # edge case
+        if head is None:
+            return False
+        
+        sNode = head 
+        fNode = head.next
+
+        power = 1
+        length = 1
+
+        # finding a loop
+        # if there is no loop fNode will end at NULL
+        while fNode is not None and sNode != fNode:
+            if length == power:
+                power *= 2
+                length = 0
+                sNode = fNode
+            fNode = fNode.next
+            length += 1
+        if fNode is None:
+            return False
+
+        sNode = fNode = head
+        while length > 0:
+            fNode = fNode.next
+            length -= 1
+
+        while fNode != sNode:
+            fNode = fNode.next
+            sNode = sNode.next
+        
+        return True
+
+
 # testing
 LL = ListNode(3)
-# LL.next = ListNode(2)
-# LL.next.next = LL
-# LL.next.next = ListNode(0)
-# LL.next.next.next = ListNode(-4)
-# LL.next.next.next.next = LL.next
-print(LL.hasCycle(LL))
+LL.next = ListNode(2)
+LL.next.next = LL
+LL.next.next = ListNode(0)
+LL.next.next.next = ListNode(-4)
+LL.next.next.next.next = LL.next
+print(LL.hasCycleBrent(LL))
 '''
 comments
 - Floyd's cycle detection algo: 1 slow pointer, 1 fast pointer; at different speeds they will meet at a certain point if there exist a cycle
