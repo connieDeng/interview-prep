@@ -55,5 +55,6 @@ print(isNumber2(s))
 
 '''
 comments
-- this question has 3 methods of solving;
+    - https://www.youtube.com/watch?v=6TcCGyybs0g
+    - this question has 3 methods of solving;
 '''
