@@ -12,7 +12,23 @@ class TreeNode(object):
         :type K: int
         :rtype: List[int]
         """
+        ans = []
+        if root is None or K < 0:
+            return
         
+        if k == 0:
+            ans.append(root.val)
+            return
+
+
+    def distanceKNode(root, target, K):
+        if root is None:
+            return -1
+
+        if root == target:
+            distanceKNode(root, k)
+            return 0
+
 # testing code
 root = TreeNode(3)
 root.left = TreeNode(5)
